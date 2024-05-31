@@ -33,9 +33,6 @@ ul {
 
 .logo {
   /* border: 1px solid red; */
-}
-
-.logo:hover {
   color: cyan;
 }
 
