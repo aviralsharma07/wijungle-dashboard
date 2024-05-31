@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# WiJungle Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a network security dashboard that visualizes alert data using various types of charts. The charts included are Line Chart, Bar Chart, Pie Chart, and Doughnut Chart. The dashboard allows users to easily navigate and view different visual representations of the alert data.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get started with the project, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+   ```sh
+   git clone https://github.com/your-username/wijungle-dashboard.git
+   cd wijungle-dashboard
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install the dependencies:
+   ```sh
+    npm install
+   ```
+3. Start the development server:
+   ```sh
+    npm start
+   ```
+4. Open the browser and navigate to `http://localhost:3000/` to view the dashboard.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Once the development server is running, open your browser and navigate to http://localhost:3000 to view the dashboard.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Navigating the Dashboard
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Line Chart: Displays the number of alerts over time.
+- Bar Chart: Shows the destination ports and the number of alerts associated with each port.
+- Pie Chart: Visualizes the distribution of different alert signatures.
+- Doughnut Chart: Represents the distribution of alert events based on source IP addresses.
 
-### `npm run eject`
+  **NOTE:** Clicking on the items in the navigation bar will smoothly scroll to the corresponding chart section.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Line Chart: Tracks the frequency of alerts and identifies trends or spikes in network activity.
+2. Bar Chart: Identifies the most frequently targeted ports in the network.
+3. Pie Chart: Understands the variety and prevalence of different security threats.
+4. Doughnut Chart: Highlights which source IPs are most active in generating alerts.
+5. Smooth Scrolling Navigation: Click on the navbar items to scroll to the corresponding chart.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React: A JavaScript library for building user interfaces.
+- Chart.js: A JavaScript library for creating beautiful charts.
+- React-Chartjs-2: A React wrapper for Chart.js.
+- CSS: For styling the application.
+- Bootstrap: For responsive design.
