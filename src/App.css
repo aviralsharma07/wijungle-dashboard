@@ -22,3 +22,29 @@
     padding: 20px;
   }
 }
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+  font-size: 1rem;
+  margin: 0 !important;
+  font-weight: normal;
+}
+
+.logo {
+  /* border: 1px solid red; */
+}
+
+.logo:hover {
+  color: cyan;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+}
+
+li:hover {
+  cursor: pointer;
+  color: cyan;
+  border-bottom: 1px solid cyan;
+}
